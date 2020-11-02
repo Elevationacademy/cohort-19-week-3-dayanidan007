@@ -1,0 +1,104 @@
+#container{
+  height: 100vh;
+display: grid;
+ grid-template-areas: 
+ "f c c c c"
+ "f c c c c"
+ "f c c c c"
+ "f c c c c"
+ "f i i i i";
+
+}
+
+#friends{
+  display: grid;
+  align-items: center;
+  grid-area: f;
+  background-color: #8e44ad;
+
+}
+#chatbox{
+ display: grid;
+ gap: 10px;
+ grid-area: c;
+ background-color: #ecf0f1;
+}
+#input{
+  display: grid;
+  grid-area: i;
+   background-color: white;
+   border: 0.5px solid grey;
+}
+
+
+.friendName{
+  background-color: #af98c3;
+}
+
+.left-contant{
+   display: grid;
+   background-color: #bdc3c7;
+   width: 100px;
+   height: 70px;
+   justify-self: start;
+   text-align: left;
+   border: 1px solid #bdc3c7;
+   border-radius: 20%;
+   margin: 10px 20px;
+   padding: 5px 5px;
+   grid-template-areas: 
+   "t ."
+   ". ti";
+
+}
+
+.text{
+  grid-area: t;
+  width: 100%;
+  height: 20px;
+  min-width: 50px;
+  font-family: 'Grandstander', cursive;
+  font-style: initial;
+}
+
+.time{
+  grid-area: ti;
+  font-size: x-small;
+  height: 10px;
+  font-family: 'Syne Tactile', cursive;
+
+}
+.right-contant{
+  display: grid;
+  background-color: #2ecc71;
+  width: 100px;
+  height: 70px;
+  justify-self: end;
+  text-align: left;
+  border: 1px solid #2ecc71;
+  border-radius: 20%;
+  margin: 10px 20px;
+  padding: 5px 5px;
+  grid-template-areas: 
+  "t ."
+  ". ti";
+
+}
+
+#input{
+  display: grid;
+  background-color: #8e44ad;
+  grid-template-areas: 
+  "in in in se";
+  text-align: center;
+  color: white;
+}
+#sending{
+  grid-area: se;
+  align-items: center;
+  justify-self: center;
+  padding: 5px;
+}
+input{
+  grid-area: in;
+}
